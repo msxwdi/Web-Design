@@ -1,0 +1,282 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+
+:root{
+    --blue: hsl(226, 41%, 47%);
+}
+
+body {
+    background-color: var(--blue);
+    font-family: sans-serif;
+    font-weight: bold;
+    direction: rtl;
+    color: white;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 85vh;
+    animation: slidein 0.5s ease-in;
+}
+
+.l-all {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    margin-top: 5px;
+    padding-left: 240px;  
+  }
+  
+  .logo-img {
+    width: 35px;
+    height: 35px;
+  }
+  
+  .logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+  }
+
+  nav a:hover {
+  background-color: #5a6fb5;
+  padding: 0.6rem 1rem;
+  border-radius: 35px;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    position: relative;
+}
+
+.container-2{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+.line::before{
+    content: "";
+    position: absolute;
+    top: 117px;
+    left: 812px;
+    width: 10%;
+    height: 2px;
+    background-color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+.tagline {
+    font-size: 9px;
+    color: #FFD700;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+B{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 70px;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+
+}
+
+.btn-fill 
+    {
+    border: 1px solid rgb(235, 235, 231);
+    padding: 4px 22px;
+    border-radius: 24px;
+    text-decoration: none;
+    background-color: #fff;
+    color: black;
+font-family: 'bolds';
+}
+
+.btn-fill:hover{
+    background: none;
+    padding: 4px 22px;
+    border-radius: 24px;
+}
+
+.btn-outline {
+    border: 1px solid rgb(223 112 69);
+    padding: 1px 15px 6px 15px;
+    border-radius: 24px;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.btn-outline:hover{
+    background: #df7045;
+    padding: 1px 15px 6px 15px;
+    border-radius: 24px;
+}
+
+.project-ha button{
+    border: 1px solid white;
+    padding: 6px 15px 6px 15px;
+    border-radius: 24px;
+    text-decoration: none;
+    font-size: 14px;
+    background: none;
+    margin-bottom: 15px;
+    color: white;
+    font-weight: bold;
+}
+
+.project-ha button:hover{
+    padding: 6px 15px 6px 15px;
+    border-radius: 24px;
+    color: #df7045;
+    cursor: pointer;
+}
+
+.btn-link {
+    color: white;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+.content {
+    padding: 40px 20px;
+    max-width: 600px;
+}
+
+.content h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    font-family: 'bold';
+}
+
+.content h2 {
+    font-size: 24px;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.content p {
+    color: #ddd;
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+
+.profile {
+    position: absolute;
+    right: 678px;
+    bottom: -107px;
+
+}
+
+.profile img {
+    width: 525px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dots{
+    position: absolute;
+    background-color: transparent;
+    border: 2px solid white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.dots:nth-child(1){
+    top:20px
+}
+
+.dots:nth-child(2){
+    right: 20px;
+}
+
+.dots{
+    position: absolute;
+    background-color:#ffffff6b;
+    border: 2px solid white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 30px white;
+    animation: updown 2s ease-in-out infinite;
+}
+
+@keyframes updown{
+    0% , 100%{
+transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-30px);
+    }
+}
+
+.dots:nth-child(1){
+    top: 87%;
+    margin-right: 18%;
+    right: 46%;
+}
+
+.dots:nth-child(2){
+    right: 60%;
+    margin: 28%;
+}
+
+.dots:nth-child(3){
+    left: 44%;
+    top: 10%;
+    margin-top: 9%;
+}
+
+.projects{
+    max-height: 200px;
+    overflow: hidden;
+    overflow-y: scroll;
+    margin-bottom: 20px;
+}
+
+.projects::-webkit-scrollbar{
+    display: none;
+}

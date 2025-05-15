@@ -1,0 +1,143 @@
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --White: #ffffff;
+    --Off-white: #f0f0f0;
+    --Light-grey: #dbdbdb;
+    --Smokey-grey: #716f6f;
+    --Off-black: #141414;
+    --Purple: #854dff;
+    --Light-red: #ff5757;
+
+}
+
+@font-face {
+    font-family: idk, sans-serif;
+    src: url(./fonts/Poppins-ExtraBold.ttf);
+}
+
+@keyframes slidein {
+    0%{
+        Transform: scale(1.3);
+       Opacity: 0;
+    }
+    100%{
+       Transform: scale(1);
+       Opacity: 1;
+ 
+    }
+}
+
+body{
+    animation: slidein 0.5s ease-in;
+}
+
+.anything{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: idk, sans-serif;
+    font-weight: 700;
+    background-color: var(--Light-grey);
+    color: var(--Off-black);
+    width: 100vw;
+    font-size: 36px;
+    line-height: 1.3;
+    min-height: 100vh;
+}
+
+.container{
+    padding: 39px;
+    margin: 40px;
+    border: 1 var(--White) solid;
+    background-color: var(--White);
+    width: 620px;
+    height: 470px;
+    border-radius: 20px;
+    border-bottom-right-radius: 170px;
+}
+
+.IN-put{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    border-bottom: 1px var(--Light-grey) solid;
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.B{
+    width: 107px;
+    height: 45px;
+    padding-left: 16px;
+    font-size: 1.3rem;
+    border-radius: 6px;
+    color: var(--Off-black);
+    border: 1px var(--Light-grey) solid;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.up{
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--Smokey-grey);
+    padding-left: 5px;
+    font-weight: 800;
+}
+
+.OMG{
+    position: absolute;
+    right: 0;
+    bottom: -33px;
+    width: 65px;
+    height: 65px;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--Purple);
+    transition: all 0.15s;
+
+}
+
+.OMG::after{
+    content: "";
+    background-image: url(./images/icon-arrow.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+    width: 28px;
+    height: 30px;
+}
+
+.OMG:hover{
+    background-color: var(--Off-black);
+}
+
+span{
+    color: var(--Purple);
+    font-weight: 600;
+}
+
+.out-put{
+    font-style: italic;
+    font-weight: 900;
+    font-size: 4.35rem;
+}
+
+.error{
+    font-size: 0.71rem;
+    color: hsl(0, 100%, 67%);
+    font-weight: 400;
+    font-style: italic;
+    position: absolute;
+    top: 68px;
+    opacity: 0;
+}
